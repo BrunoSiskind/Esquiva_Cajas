@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BadCajaMov : MonoBehaviour
 {   
-    public float velocidad = 3f;
+    public float velocidad = 8f;
      float InitialYValue;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class BadCajaMov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down*velocidad*Time.deltaTime);
+        transform.Translate(0,-velocidad*Time.deltaTime,0);
     }
 
     public void Moveboxtorandomposition(){
