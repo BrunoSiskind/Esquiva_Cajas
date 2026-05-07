@@ -142,8 +142,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0
+  m_Center: {x: 0, y: -2.5, z: 0}
 --- !u!23 &26886335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: -0.28, y: 1.97, z: -5.38}
+  m_LocalPosition: {x: -0.28, y: 8.86, z: -7.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -367,9 +367,10 @@ GameObject:
   - component: {fileID: 842641245}
   - component: {fileID: 842641244}
   - component: {fileID: 842641248}
+  - component: {fileID: 842641249}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,6 +459,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1369ee3a25ed8964894d42ccf3377be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &842641249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842641243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe72880f438bbb4fa0857a831a0915d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289928241
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +485,7 @@ GameObject:
   - component: {fileID: 1289928242}
   m_Layer: 0
   m_Name: piso
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,8 +593,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0
+  m_Center: {x: 0, y: -2.5, z: 0}
 --- !u!23 &2036577966
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -635,7 +648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036577964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.024, z: -4.09}
+  m_LocalPosition: {x: -0.32, y: 0.02, z: -4.09}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -654,9 +667,11 @@ GameObject:
   - component: {fileID: 2080697526}
   - component: {fileID: 2080697525}
   - component: {fileID: 2080697529}
+  - component: {fileID: 2080697530}
+  - component: {fileID: 2080697531}
   m_Layer: 0
   m_Name: EsquivaCaja
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -691,7 +706,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb8dfa4af95cbc841a19385dba894765, type: 2}
+  - {fileID: 2100000, guid: b63ca67ac0ff38140b6409699c47cbc2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -746,6 +761,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 3
+--- !u!54 &2080697530
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080697524}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &2080697531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080697524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b247d39067c0e640b2ccc2c132eee16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajamovementScript: {fileID: 0}
 --- !u!1 &2110609647
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,8 +820,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0
+  m_Center: {x: 0, y: -2.5, z: 0}
 --- !u!23 &2110609649
 MeshRenderer:
   m_ObjectHideFlags: 0
