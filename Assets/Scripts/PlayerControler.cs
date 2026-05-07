@@ -7,16 +7,19 @@ public class PlayerControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetkeyDown(KeyCode.D))
-        transform.Translate(2,0,0);
-
-        if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetkeyDown(KeyCode.A))
-        transform.Translate(-2,0,0);
+       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+         if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)){
+        transform.Translate(0,0,2);
+        }
+
+        else if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)){
+            transform.Translate(0,0,-2);
+        }
     }
 }
