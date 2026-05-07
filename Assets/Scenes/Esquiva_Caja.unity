@@ -197,7 +197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26886333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 0.024, z: -4.09}
+  m_LocalPosition: {x: 1.62, y: 0.024, z: -4.19}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -366,8 +366,9 @@ GameObject:
   - component: {fileID: 842641246}
   - component: {fileID: 842641245}
   - component: {fileID: 842641244}
+  - component: {fileID: 842641248}
   m_Layer: 0
-  m_Name: PlayerCube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,6 +446,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &842641248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842641243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1369ee3a25ed8964894d42ccf3377be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289928241
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,8 +653,9 @@ GameObject:
   - component: {fileID: 2080697527}
   - component: {fileID: 2080697526}
   - component: {fileID: 2080697525}
+  - component: {fileID: 2080697529}
   m_Layer: 0
-  m_Name: BadCube
+  m_Name: EsquivaCaja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,12 +727,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080697524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 4.05, z: -4.1}
+  m_LocalPosition: {x: -0.32, y: 7.83, z: -4.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080697529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080697524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1500d77519aa6b94292d761ae2aad5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 3
 --- !u!1 &2110609647
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110609647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.803, y: 0.024, z: -4.09}
+  m_LocalPosition: {x: -2.14, y: 0.024, z: -4.09}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
