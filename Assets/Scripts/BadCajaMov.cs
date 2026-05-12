@@ -5,6 +5,7 @@ using UnityEngine;
 public class BadCajaMov : MonoBehaviour
 {   
     public float velocidad = 8f;
+    public float incrementovelocidad = 0.5f;
      float InitialYValue;
     // Start is called before the first frame update
     void Start()
@@ -35,5 +36,6 @@ public class BadCajaMov : MonoBehaviour
         
         newPosition.y = InitialYValue;
         transform.position = newPosition;
+        velocidad += incrementovelocidad;
     }
 }
